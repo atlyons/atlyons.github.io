@@ -9,15 +9,10 @@ module.exports = {
             .page.popcrush.home().carouselRight()
             .page.popcrush.home().carouselRight()
 
-
             // Send keys to Search field
             .page.popcrush.home().carouselLeft()
             .page.popcrush.home().carouselRight()
      
-
-            // Click the Search button
-            // .page.popcrush.headerObjects().searchBtn()
-
-        // .end();          
+        .end();          
     }
 };
