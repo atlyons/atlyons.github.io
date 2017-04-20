@@ -25,11 +25,12 @@ module.exports = {
      .page.headerNav().hostAnExpirience()
       .waitForElementVisible('body', 4000)
 
-
+      .pause('1000')
      .page.headerNav().help()
      .waitForElementVisible('body', 4000)
+     .pause('100000')
     //  .page.headerNav().airbnbHelp()
-     .waitForElementVisible('body', 4000)
+    //  .waitForElementVisible('body', 4000)
       // Increasing number of guests
     //   .page.searchScreen().guest()
 

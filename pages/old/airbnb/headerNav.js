@@ -56,7 +56,10 @@ module.exports = function (browser) {
         this.help = function() {
             browser
                 // Click the "Help" button
-                .click('li.item_1g2dfiu:nth-child(4) > div:nth-child(1) > div:nth-child(1) > button:nth-child(1)')
+            .find_elements_by_xpath("//*[contains(text(), 'Help')]")
+
+                // .click("//span[contains(@class, 'link_cr2i2a') and text()='Help']")
+                // .click('a[href=#logout]')
             return browser;
     };
 
@@ -64,7 +67,7 @@ module.exports = function (browser) {
                 this.airbnbHelp = function() {
                     browser
                         // Click the "Airbnb help" button
-                        .click('a.component_9w5i1l-o_O-navigation_3mnosr')
+                        .click('xpath', 'html/body/div[3]/div/div/div/div[1]')
                     return browser;
                 };
 

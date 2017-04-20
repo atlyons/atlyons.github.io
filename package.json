@@ -34,6 +34,7 @@
     "aws-sdk": "^2.7.13",
     "env2": "^2.1.1",
     "mime-types": "^2.1.13",
+    "nightwatch-slack-reporter": "0.0.2",
     "nodemon": "^1.11.0"
   },
   "keywords": [
