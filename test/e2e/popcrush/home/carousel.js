@@ -1,17 +1,15 @@
 module.exports = {
-    'Popcrush.com search test': function (client) {
+    'Popcrush.com home page carousel test': function (client) {
         client
 
             // Navigate to Popcrush.com
             .page.popcrush.headerObjects().popcrush()
 
-            // Send keys to Search field
-            .page.popcrush.home().carouselRight()
-            .page.popcrush.home().carouselRight()
+            // Click the carousel next button
+            .page.popcrush.carouselObjects().carouselRight()
 
-            // Send keys to Search field
-            .page.popcrush.home().carouselLeft()
-            .page.popcrush.home().carouselRight()
+            // Click the carousel previous button
+            .page.popcrush.carouselObjects().carouselRight()
      
         .end();          
     }

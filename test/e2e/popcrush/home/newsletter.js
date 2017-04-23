@@ -5,18 +5,15 @@ module.exports = {
             // Navigate to Popcrush.com
             .page.popcrush.headerObjects().popcrush()
 
-            // Verify that the 'PHOTOS' section is present
-            .page.popcrush.home().photos()
+            // Send keys to Search field
+            .page.popcrush.home().newsletter()
 
-            // Click on the Cover Image of the first 'PHOTOS' article
-            .page.popcrush.home().photosImg()
+            // Click the Search button
+            .page.popcrush.home().newsletterField()
+            .page.popcrush.home().newsletterBtn()
+            .pause(1000)
+            .page.popcrush.home().recaptcha()
 
-            // Navigate back to the home page - Popcrush.com
-            .page.popcrush.headerObjects().homeBtn()
-
-            // Click on the article title of the first 'PHOTOS' article
-            .page.popcrush.home().photosTitle()
-
-            .end();
+        // .end();          
     }
 };
