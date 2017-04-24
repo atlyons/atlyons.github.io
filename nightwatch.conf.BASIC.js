@@ -79,4 +79,4 @@ function imgpath (browser) {
 }
 
 module.exports.imgpath = imgpath;
-module.exports.SCREENSHOT_PATH = SCREENSHOT_PATH;
+module.exports.SCREENSHOT_PATH = SCREENSHOT_PATH; 
