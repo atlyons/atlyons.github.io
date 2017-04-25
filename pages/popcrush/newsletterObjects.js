@@ -17,7 +17,7 @@ module.exports = function (browser) {
         return browser;
     };
 
-      
+    // Click the 'NEWSLETTER' submit btn     
     this.newsletterBtn = function () {
         browser
             .click('.button')

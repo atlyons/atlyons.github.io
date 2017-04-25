@@ -1,8 +1,7 @@
 module.exports = function (browser) {
 
 // -----------------------------------------------------
-
-// ----NAVIGATING TO POPCRUSH.COM----
+// ---- NAVIGATING TO POPCRUSH.COM ----
 
 // Navigating to website
 this.popcrush = function () {
@@ -14,8 +13,7 @@ this.popcrush = function () {
 
 
 // -----------------------------------------------------
-
-// ----POPCRUSH.COM LOGO----
+// ---- POPCRUSH.COM LOGO ----
 
 // Clicking the Popcrush Logo
 this.popcrushLogo = function () {
@@ -27,8 +25,7 @@ this.popcrushLogo = function () {
 
 
 // -----------------------------------------------------
-
-// ----NAVBAR----
+// ---- NAVBAR ----
 
     // Clicking the Home button
     this.homeBtn = function () {
@@ -52,7 +49,6 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-423041 > a > span')
             .expect.element('h1').text.to.equal('MUSIC NEWS')
-        // .assert.title('Music News - PopCrush')
         return browser;
     };
 
@@ -61,7 +57,6 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-423046 > a > span')
             .expect.element('h1').text.to.equal('MOVIE NEWS')
-        // .assert.title('Movie News - PopCrush')
         return browser;
     };
 
@@ -70,7 +65,6 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-423045 > a > span')
             .expect.element('h1').text.to.equal('TV NEWS')
-        // .assert.title('TV News - PopCrush')
         return browser;
     };
 
@@ -79,7 +73,6 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-186601 > a > span')
             .expect.element('h1').text.to.equal('POLLS')
-        //  .assert.title('Polls - PopCrush')
         return browser;
     };
 
@@ -88,7 +81,6 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-414460 > a > span')
             .expect.element('h1').text.to.equal('VIDEOS')
-        //  .assert.title('Videos - PopCrush')
         return browser;
     };
 
@@ -97,7 +89,6 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-376278 > a > span')
             .expect.element('h1').text.to.equal('PHOTO GALLERIES')
-        //  .assert.title('Photo Galleries - PopCrush')
         return browser;
     };
 
@@ -106,13 +97,11 @@ this.popcrushLogo = function () {
         browser
             .click('#menu-item-423048 > a > span')
             .expect.element('h1').text.to.equal('LISTS')
-        //  .assert.title('Lists - PopCrush')
         return browser;
     };
 
 // -----------------------------------------------------
-
-// ----TRENDING NAV LINKS----
+// ---- TRENDING NAV LINKS ----
 
     // Clicking TRENDING link 1
     this.trendingOne = function () {
@@ -164,8 +153,7 @@ this.popcrushLogo = function () {
 
 
 // -----------------------------------------------------
-
-// ----SOCIAL HEADER LINKS----
+// ---- SOCIAL HEADER LINKS ----
 
     // Clicking the FACEBOOK button
     this.facebookBtn = function () {
@@ -203,8 +191,7 @@ this.popcrushLogo = function () {
     };
 
 // -----------------------------------------------------
-
-// ----SEARCH----
+// ---- SEARCH ----
 
     this.searchField = function () {
         browser
@@ -221,5 +208,4 @@ this.popcrushLogo = function () {
             .expect.element('h1').text.to.equal('SEARCH RESULTS FOR CAT')
         return browser;
     };
-
 };

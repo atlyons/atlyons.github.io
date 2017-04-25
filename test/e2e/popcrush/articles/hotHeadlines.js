@@ -5,7 +5,7 @@ module.exports = {
             // Navigate to Popcrush.com
             .page.popcrush.headerObjects().popcrush()
 
-            // .waitForElementVisible('body', 500)
+            .waitForElementVisible('body', 500)
 
             // Click on the title of the first article
             .page.popcrush.feedObjects().articleTitle()

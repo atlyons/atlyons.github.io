@@ -20,8 +20,6 @@ module.exports = function (browser) {
     // Clicking article cover image
     this.articleImage = function () {
         browser
-            // .click('xpath', 'html/body/div[1]/div[4]/div[3]/div/div/section/article[1]/figure/a/img')
-            // .click('#post-content-519545>figure>a>img')
             .click('a > img.wp-post-image.sonar_image')
         return browser;
     };

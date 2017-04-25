@@ -1,37 +1,30 @@
 module.exports = {
-  'Popcrush.com header navigation test' : function (client) {
+  'Testing the Popcrush.com news feed' : function (client) {
     client
     
       // Navigate to Popcrush.com
       .page.popcrush.headerObjects().popcrush()
-      // .waitForElementVisible('body', 500)
 
-      // Verify the 'POPCRUSH NETWORK' string appears within the footer
+      // Click the 'NEWS' btn
       .page.popcrush.headerObjects().newsBtn()
 
-      // Click the 'Contact Us' button
+      // Click the first articles title
       .page.popcrush.feedObjects().articleTitle()
 
       .back()
 
-      // Click the 'Privacy' button
+      // Click on the articles author
       .page.popcrush.feedObjects().articleAuthor()
 
       .back()
 
-      // Click the 'Privacy' button
+      // Click the article image
       .page.popcrush.feedObjects().articleImage()
 
       .back()
 
-      // Click the 'Privacy' button
+      // Click the 'READ MORE' btn
       .page.popcrush.feedObjects().articleReadMore()
-
-      // Click the 'HOME' button within the navbar
-    //   .page.popcrush.headerObjects().homeBtn()
-
-      // Click the 'Advertise' button
-    //   .page.popcrush.footerObjects().advertiseBtn()
 
       .end();
   }

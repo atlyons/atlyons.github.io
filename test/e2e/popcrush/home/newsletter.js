@@ -1,19 +1,25 @@
 module.exports = {
-    'Popcrush.com search test': function (client) {
+    'Popcrush.com newsletter test': function (client) {
         client
 
             // Navigate to Popcrush.com
             .page.popcrush.headerObjects().popcrush()
 
-            // Send keys to Search field
+            // Verify the 'NEWSLETTER' section is displayed
             .page.popcrush.home().newsletter()
 
-            // Click the Search button
+            // Send keys to the newsletter field
             .page.popcrush.home().newsletterField()
+
+            // Click the newsletter submit btn
             .page.popcrush.home().newsletterBtn()
+
+            // pause
             .pause(1000)
+
+            // Verify the Recaptcha is displayed
             .page.popcrush.home().recaptcha()
 
-        // .end();          
+        .end();          
     }
 };
