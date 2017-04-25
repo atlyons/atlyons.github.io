@@ -15,13 +15,9 @@ module.exports = {
             // 1. Navigate to 'Popcrush.com'
             .page.popcrush.headerObjects().popcrush()
 
-            .waitForElementVisible('body', 500)
-
             // 2. Click on the first 'POLLS' article
             .page.popcrush.pollsObjects().pollsImg()
-
-            .waitForElementVisible('body', 500)
-
+            
             // 3. Click the 'Facebook SHARE' btn
             .page.popcrush.articleObjects().facebookBtn()
 
