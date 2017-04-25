@@ -5,7 +5,7 @@ module.exports = {
             // Navigate to Popcrush.com
             .page.popcrush.headerObjects().popcrush()
 
-            .waitForElementVisible('body', 500)
+            // .waitForElementVisible('body', 500)
 
             // Click on the title of the first article
             .page.popcrush.feedObjects().articleTitle()
@@ -27,17 +27,14 @@ module.exports = {
             // Clicking the 'REDIT' share button
             .page.popcrush.articleObjects().reditBtn()
 
-            // Navigate back to the home page - Popcrush.com
-            // .page.popcrush.headerObjects().homeBtn()
+            // Verify the 'LEAVE A COMMENT' section is displayed
+            .page.popcrush.articleObjects().leaveAComment()
 
-            // Click the cover image of the first article
-            // .page.popcrush.feedObjects().articleImage()
+            // Verify the 'FILED UNDER' section is displayed
+            .page.popcrush.articleObjects().filedUnder()
 
-            // Navigate back to the home page - Popcrush.com
-            // .page.popcrush.headerObjects().homeBtn()
-
-            // Click the 'READ MORE' button located at the bottom of the article preview
-            // .page.popcrush.feedObjects().articleReadMore()
+            // Verify the 'FILED UNDER' section is displayed
+            .page.popcrush.articleObjects().catagory()
 
             .end();
     }

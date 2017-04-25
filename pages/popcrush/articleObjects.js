@@ -14,47 +14,53 @@ module.exports = function (browser) {
     this.facebookBtn = function () {
         browser
             .click('a.facebook.share_link>div')
-            .expect.element('a.facebook.share_link>div>span').text.to.equal('SHARE')
+            .expect.element('.social-group-top > div:nth-child(1) > a:nth-child(1) > span:nth-child(2)').text.to.equal('SHARE')
         return browser;
     };
 
     // Clicking the 'TWITTER' share button
     this.twitterBtn = function () {
         browser
-            // .expect.element('a.twitter.share_link>div').to.be.visible
             .click('a.twitter.share_link>div')
+            .expect.element('.social-group-top > div:nth-child(1) > a:nth-child(2) > span:nth-child(2)').text.to.equal('TWEET')
         return browser;
     };
 
     // Clicking the 'EMAIL' share button
     this.emailBtn = function () {
         browser
-            // .expect.element('a.email.share_link > div').to.be.visible
             .click('a.email.share_link > div')
+            .expect.element('.social-group-top > div:nth-child(1) > a:nth-child(3) > span:nth-child(2)').text.to.equal('EMAIL')
         return browser;
     };
 
     // Clicking the 'REDIT' share button
     this.reditBtn = function () {
         browser
-            // .expect.element('a.redit.share_link > div').to.be.visible
             .click('a.reddit.share_link > span')
+            .expect.element('.social-group-top > div:nth-child(1) > a:nth-child(4) > span:nth-child(2)').text.to.equal('REDDIT')
         return browser;
     };
 
-    // Clicking article cover image
-    this.articleImage = function () {
+    // Verify the 'LEAVE A COMMENT' section is displayed
+    this.leaveAComment = function () {
         browser
-            // .click('xpath', 'html/body/div[1]/div[4]/div[3]/div/div/section/article[1]/figure/a/img')
-            // .click('#post-content-519545>figure>a>img')
-            .click('a > img.wp-post-image.sonar_image')
+            .expect.element('.comments-header > h4:nth-child(1)').text.to.equal('LEAVE A COMMENT')
         return browser;
     };
 
-    // Clicking 'READ MORE' button
-    this.articleReadMore = function () {
+    // Verify the 'FILED UNDER' section is displayed
+    this.filedUnder = function () {
         browser
-            .click('.more_act>a')
+            .expect.element('.the_tags').to.be.visible;
         return browser;
     };
+
+    // Verify the 'CATEGORY' section is displayed
+    this.catagory = function () {
+        browser
+            .expect.element('.the_category').to.be.visible;
+        return browser;
+    };
+
 }
