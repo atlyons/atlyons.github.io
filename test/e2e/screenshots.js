@@ -15,7 +15,7 @@ module.exports = {
 
             // Navigate to Popcrush.com
             .url(home)
-            .waitForElementVisible('body', 100)
+            .waitForElementVisible('body', 100) 
             .assert.urlEquals(home)
             .saveScreenshot('screenshots/popcrush/smokeTest/home.png')
 
