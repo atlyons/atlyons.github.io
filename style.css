@@ -16,7 +16,7 @@
         opacity: .75;
         filter: alpha(opacity=75);
         /* For IE8 and earlier */
-        border: 2px solid black;
+        border: 1px solid blue;
         border-radius: 10px;
     }
 
