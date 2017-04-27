@@ -9,7 +9,7 @@ module.exports = {
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
   "page_objects_path" : "pages",
-  "globals_path" : "",
+  "globals_path" : "./lib/globals.js",
 
   "output_folder": "./reports", // reports (test outcome) output by nightwatch
   "selenium": { // downloaded by selenium-download module (see readme)
